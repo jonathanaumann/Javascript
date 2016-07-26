@@ -1,12 +1,18 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <head>
+  	<title></title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script   src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-</head>
-<body>
+  </head>
+
+  
+
+  <body>
   
     <div class="container">
   		<form class="js-form">
@@ -23,7 +29,8 @@
   		<div class="btn-play"></div>
 
   		<div class="metadata">
-  		  <p class="title">Hunger of The Pine</p>
+      <button class="js-show-artist">
+  		  <p class="title">Hunger of The Pine</p></button>
   		  <p class="author">alt-J</p>
 
   		    <div class="seekbar">
@@ -38,7 +45,46 @@
 		
 		</div>
 	</div>
+          
+    </body>
+</html>
 
+
+<!-- 
+<div class="modal fade js-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+       
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span>&times;</span>
+        </button>
+
+        <h2 class="js-artist-name">Drake</h2>
+      </div>
+
+      <div class="modal-body">
+      <img src="https://media.giphy.com/media/3o72FcL4VW0cmNfwvC/giphy.gif" class="js-artist-photo">
+
+      <h3> Genres <h3>
+      <ul class="js-artist-genres"> 
+        <li>Trap</li>
+        <li> Atlanta </li>
+        <li> RAP/HIPHOP </li>
+      </ul>
+        <p>Followers: <strong class="js-artist-follewers"> 100000000 </strong></p>
+        <p>Popularity:<strong class="js-artist-pop">100000000</strong></p>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+ -->
 <!-- Pokemon modal view (hidden at first) -->
 <!-- <div class="modal fade js-artist-modal">
   <div class="modal-dialog">
@@ -63,6 +109,3 @@
           <dt>Followers</dt>
           <dd class="js-artist-followers">Followers</dd>
 
-          
-</body>
-</html>

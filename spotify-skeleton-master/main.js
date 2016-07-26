@@ -1,5 +1,6 @@
 $(document).ready(function () {
-	
+	// $(".js-show-artist").on("click", fetchArtistInfo)
+
 
 
 	$(".js-form").on("submit", fetchArtists); 
@@ -69,10 +70,51 @@ function createSongHtml (song) {
 		  $(".author").text(theAuthor)
 		  $(".cover").html(`<img src="${image}">`)
 
+
+		  $(".js-show-artist").data( "artists-url", song.artists[0].href)
+		};
+
+	// function fetchArtistInfo () {
+	// 		var artistURL = $(".js-show-artist").data("artists-url")	
+	// 		$.ajax({
+	// 			url: artistURL,
+	// 			success: showModal,
+	// 			error: handleError
+	// 		})
+	// 	}
+
 		    
 		      
-}
+
 function handleError (error) {
   console.log("You slipped heavy");
   console.log(error.responseText);
 }
+
+// function showModal(response) {
+// 	if (response.images.length > 0) {
+// 		var imageURL = response.images[0].url;
+// 	}
+// 	else {
+// 		var imageURL =  "https://media.giphy.com/media/3o72FcL4VW0cmNfwvC/giphy.gif"
+// 	}
+// 	$("js-artist-name").text( response.name);
+// 	$("js-artist-photo").prop( response.name);
+// 	$(".js-artist-photo").prop( "src", imageUrl );
+// 	$(".js-artist-followers").text( response.followers.total );
+// 	$(".js-artist-pop").text( response.popularity );
+// 	$(".js-artist-genres").empty();
+
+// 	response.genres.forEach(function (theGenre) {
+//     var html = `<li> ${theGenre} </li>`; })
+
+//     $(".js-artist-genres").append(html);
+//     $(".js-modal").modal("show");
+
+//  };
+
+
+	
+
+
+
